@@ -157,8 +157,8 @@ return true
             if (checkSelfPermission(Manifest.permission.CALL_PHONE)!= PackageManager.PERMISSION_GRANTED){
                     ActivityCompat.requestPermissions(this@NddrawActivity, arrayOf(Manifest.permission.CALL_PHONE),0)
 
-            }else{startActivity(Intent(Intent.ACTION_CALL, Uri.parse("192")))}
-        }else{startActivity(Intent(Intent.ACTION_CALL, Uri.parse("192")))   }
+            }else{startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:192")))}
+        }else{startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:192")))   }
 
 
     }
